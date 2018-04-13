@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/fuzhu_layout_home1"
+        layout="@layout/home_page_view1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <include
+        android:id="@+id/fuzhu_layout_home2"
+        layout="@layout/home_page_view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_page_lump_height" />
+
+    <include
+        android:id="@+id/fuzhu_layout_home3"
+        layout="@layout/home_page_view3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+</LinearLayout>

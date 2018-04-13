@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolbarTheme"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/home_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/fuzhu_layout_home1"
+                layout="@layout/home_page_view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_page_lump_height"
+
+                tools:layout_editor_absoluteX="16dp" />
+
+            <include
+                android:id="@+id/fuzhu_layout_home2"
+                layout="@layout/home_page_view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_page_lump_height"
+                app:layout_constraintTop_toBottomOf="@+id/fuzhu_layout_home1" />
+
+            <include
+                android:id="@+id/fuzhu_layout_home3"
+                layout="@layout/home_page_view32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/fuzhu_layout_home2" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/fuzhu_textview_light1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/home_page_light_attr_liangdu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_page1_light"
+        app:layout_constraintTop_toTopOf="@+id/home_page1_light" />
+
+    <TextView
+        android:id="@+id/home_page1_currentlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="80"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/fuzhu_textview_light1"
+        app:layout_constraintStart_toStartOf="@+id/fuzhu_textview_light1"
+        app:layout_constraintTop_toBottomOf="@+id/fuzhu_textview_light1" />
+
+    <TextView
+    android:id="@+id/fuzhu_textview_light2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:text="@string/home_page_light_attr_mode"
+    app:layout_constraintEnd_toStartOf="@+id/home_page1_light"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/home_page1_light" />
+
+    <TextView
+        android:id="@+id/home_page1_lightmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="工作"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/fuzhu_textview_light2"
+        app:layout_constraintStart_toStartOf="@+id/fuzhu_textview_light2"
+        app:layout_constraintTop_toBottomOf="@+id/fuzhu_textview_light2" />
+
+    <ImageView
+        android:id="@+id/home_page1_light"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/main_home_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fuzhu_textview_light3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/home_page_light_attr_voice"
+        app:layout_constraintBottom_toBottomOf="@+id/home_page1_light"
+        app:layout_constraintEnd_toStartOf="@+id/home_page1_light"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/home_page1_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="开启"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/fuzhu_textview_light3"
+        app:layout_constraintStart_toStartOf="@+id/fuzhu_textview_light3"
+        app:layout_constraintTop_toBottomOf="@+id/fuzhu_textview_light3" />
+
+    <TextView
+        android:id="@+id/fuzhu_textview_light4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/home_page_light_attr_closetime"
+        app:layout_constraintBottom_toBottomOf="@+id/home_page1_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_page1_light" />
+
+    <TextView
+        android:id="@+id/home_page1_closetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="11:11"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_page1_light"
+        app:layout_constraintTop_toBottomOf="@+id/fuzhu_textview_light4" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/fuzhu_text_homepage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_page3_function"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <LinearLayout
+        android:id="@+id/fuzhu_layout_home3_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_page_lump_height"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/fuzhu_text_homepage2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_liangdu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_liangdu" />
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_secaixuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_secaixuanze" />
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_sewenxuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_sewenxuanze" />
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_dingshirenwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_dingshirenwu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fuzhu_layout_home3_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_page_lump_height"
+        app:layout_constraintTop_toBottomOf="@+id/fuzhu_layout_home3_1"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_yuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_yuyin" />
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_shebeilianjie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_shebeilianjie" />
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_shebeilianjie1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_shebeilianjie" />
+
+        <ImageView
+            android:id="@+id/home_page3_gongneng_shebeilianjie2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/main_homepage_button_margen"
+            android:visibility="invisible"
+            android:background="@color/white"
+            android:padding="@dimen/main_home_image_pading"
+            android:src="@drawable/gongneng_shebeilianjie" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

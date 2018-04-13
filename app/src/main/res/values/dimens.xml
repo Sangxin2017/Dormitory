@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_homepage_button_margen">1dp</dimen>
+    <dimen name="main_home_image_pading">20dp</dimen>
+    <dimen name="home_page_lump_height">135dp</dimen>
+</resources>

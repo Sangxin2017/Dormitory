@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">智能宿舍</string>
+    <string name="home_page_light_attr_liangdu">当前亮度</string>
+    <string name="home_page_light_attr_mode">灯光模式</string>
+    <string name="home_page_light_attr_voice">语音唤醒</string>
+    <string name="home_page_light_attr_closetime">定时关闭</string>
+    <string name="home_page2_modeselect">模式选择</string>
+    <string name="home_page3_function">功能选择</string>
+</resources>

@@ -1,5 +1,6 @@
 package com.jxaummd.light.base.view;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.ColorInt;
@@ -13,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.jxaummd.light.MainActivity;
 import com.jxaummd.light.R;
 import com.jxaummd.light.base.net.BaseNetGetRequest;
 import com.jxaummd.light.base.tool.BaseSharePreferences;
@@ -54,6 +56,7 @@ public class StorePageFragment extends Fragment {
         View view = inflater.inflate(R.layout.store_layout, container, false);
         unbinder = ButterKnife.bind(this, view);
         Glide.with(this).load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523516993359&di=ffc43a94cb0d1fe8ef5bec492150e9ee&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01212057a062c30000012e7ed325fe.gif").into(appDormitryImage);
+       // startActivity(new Intent(MainActivity.activity,LoginActivity.class));;
         saveinstance();        //根据Sharepreference 进行更新Button 状态
         return view;
     }
@@ -105,7 +108,6 @@ public class StorePageFragment extends Fragment {
                 e.printStackTrace();
             }
         }
-
 
     }
 

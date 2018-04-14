@@ -3,4 +3,7 @@
     <dimen name="main_homepage_button_margen">1dp</dimen>
     <dimen name="main_home_image_pading">20dp</dimen>
     <dimen name="home_page_lump_height">135dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

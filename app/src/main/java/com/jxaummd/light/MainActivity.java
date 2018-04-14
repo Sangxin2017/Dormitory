@@ -69,8 +69,7 @@ public class MainActivity extends FragmentActivity {
         fragmentTbaList= new ArrayList<>();
         FragmentTab tab = new FragmentTab(R.drawable.main_bottom_home_selector,"home", HomePageFragment.class);
         FragmentTab music = new FragmentTab(R.drawable.main_bottom_music_selector,"music", MusicPageFragment.class);
-          FragmentTab tab1 = new FragmentTab(R.drawable.sushe_voice,"store", StorePageFragment.class);
-
+          FragmentTab tab1 = new FragmentTab(R.drawable.app_dormitory_drawable_pulse,"store", StorePageFragment.class);
         FragmentTab tab2 = new FragmentTab(R.drawable.main_bottom_myself_selector,"myself", MyselfPageFrangment.class);
 
     //    fragmentTbaList.add(tab);
@@ -98,7 +97,7 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 MyApplication.MyToast("点击了,开始唤醒了");
-                EventBus.getDefault().post(new SpeechOperator(SpeechOperator.ASR_START,""));
+                EventBus.getDefault().post(new SpeechOperator(SpeechOperator.WAKR_START,""));
             }
         });
         img.setImageResource(tab.getIcon());

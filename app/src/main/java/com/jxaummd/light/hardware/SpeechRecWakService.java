@@ -179,10 +179,10 @@ public class SpeechRecWakService extends Service implements EventListener {
 
                 //唤醒事件
                 if(name.equals("wp.data")){
-                    if(result.getString("word").equals("小娜同学")){
+                   // if(result.getString("word").equals("小娜同学")){
                         EventBus.getDefault().post(new MediaPlayService.MediaPlayOperatyor(MediaPlayService.MediaPlayOperatyor.PLAT_MUSIC,"10001"));
                         wakStop();
-                    }
+                 //   }
 
                 }else {
                 //识别事件

@@ -2,19 +2,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jxaummd.light">
 
-    <!--网络请求-->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <!--语音相关 -->
+    <!-- 网络请求 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 语音相关 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <!--蓝牙相关-->
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <!-- 蓝牙相关 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name=".MyApplication"
@@ -37,18 +45,19 @@
         <service
             android:name="com.baidu.speech.VoiceRecognitionService"
             android:exported="false" />
-
-        <service android:name=".hardware.SpeechRecWakService"
+        <service
+            android:name=".hardware.SpeechRecWakService"
             android:enabled="true"
-            android:exported="false"/>
+            android:exported="false" />
         <service
             android:name=".hardware.BluetoothLeService"
             android:enabled="true"
-            android:exported="false"/>
+            android:exported="false" />
         <service
             android:name=".hardware.MediaPlayService"
             android:enabled="true"
-            android:exported="false"/>
+            android:exported="false" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,14 +65,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".base.toolview.PrograseSeek"
-            android:theme="@style/Theme.AppCompat.Light.Dialog"
-            />
-        <activity android:name=".base.toolview.TimePickActivity"
-            android:theme="@style/Theme.AppCompat.Light.Dialog"
+        <activity
+            android:name=".base.toolview.PrograseSeek"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".base.toolview.TimePickActivity"
             android:label=""
-            />
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".base.view.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
     </application>
 
 </manifest>
